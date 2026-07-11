@@ -1,0 +1,3 @@
+# Netlify SPA fallback: serve index.html for all client-side routes so deep
+# links (e.g. /get-help) don't 404. (Vercel uses vercel.json instead.)
+/*    /index.html   200

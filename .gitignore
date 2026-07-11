@@ -1,0 +1,28 @@
+# ── Node / client ──────────────────────────────────────────
+node_modules/
+client/dist/
+client/.env
+client/.env.local
+*.local
+
+# ── .NET / server ──────────────────────────────────────────
+bin/
+obj/
+server/**/reforged.db
+server/**/*.db
+server/**/appsettings.*.local.json
+
+# ASP.NET user secrets are stored outside the repo, but never commit these:
+**/secrets.json
+
+# ── Editors / OS ───────────────────────────────────────────
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Logs ───────────────────────────────────────────────────
+*.log
+npm-debug.log*

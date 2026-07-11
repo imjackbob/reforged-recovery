@@ -1,0 +1,6 @@
+bin/
+obj/
+*.db
+appsettings.*.local.json
+Dockerfile
+.dockerignore

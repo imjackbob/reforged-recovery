@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Static sitemap. Keep in sync with the routes in src/App.jsx. Update the
+  <loc> host to the production domain before launch.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.reforgedrecovery.org/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/about</loc><priority>0.8</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/programs</loc><priority>0.8</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/anvils</loc><priority>0.7</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/podcast</loc><priority>0.6</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/faith-community</loc><priority>0.6</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/iron-sharpens-iron</loc><priority>0.5</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/get-help</loc><priority>0.9</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/get-involved</loc><priority>0.8</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/resources</loc><priority>0.7</priority></url>
+  <url><loc>https://www.reforgedrecovery.org/contact</loc><priority>0.7</priority></url>
+</urlset>

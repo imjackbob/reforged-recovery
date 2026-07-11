@@ -1,0 +1,40 @@
+# Optional: run the API against a real PostgreSQL locally (production-like).
+# Usage:  cd server && docker compose up --build
+# The API applies EF migrations on startup and listens on http://localhost:5254.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: reforged
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: ./ReforgedRecovery.Api
+      dockerfile: Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      Database__Provider: Postgres
+      ConnectionStrings__Default: 'Host=db;Database=reforged;Username=postgres;Password=postgres'
+      # Email defaults to Console. To test real email, set:
+      # Email__Provider: SendGrid
+      # Email__SendGridApiKey: 'SG.xxxx'
+      Cors__AllowedOrigins__0: 'http://localhost:5173'
+    ports:
+      - '5254:8080'
+
+volumes:
+  pgdata:

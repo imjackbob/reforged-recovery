@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Reforged Recovery anvil mark">
+  <rect width="64" height="64" rx="12" fill="#14171c" />
+  <!-- Anvil silhouette in ember orange -->
+  <path
+    d="M13 24 h19 c1.1 0 1.7 .8 1.8 1.8 C34 29.5 37.5 32 43 32 h7 v5 h-6 c-6.2 0-9.6-2.2-11.2-4.8 V35 h4.2 l-3.2 6.4 H21.4 l-3.2-6.4 h4.2 v-6 H13 z"
+    fill="#e2571e"
+  />
+  <rect x="20" y="46" width="24" height="4" rx="1.5" fill="#a8a096" />
+</svg>

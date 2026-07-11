@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+
+/*
+  Reforged Recovery Inc. — design tokens
+  ---------------------------------------
+  Brand metaphor: reforging. Palette pulls from the forge — steel/charcoal
+  darks ("forge"), molten-orange accents ("ember"), and warm neutral paper
+  ("stone"). Every text/background pairing below was verified against
+  WCAG 2.1 AA contrast ratios (see README + /tmp contrast check during build):
+    - Body text: forge-900 on light, stone-100/300 on dark
+    - Button text: white on ember-600 (4.93:1). ember-500 is accent-only.
+    - Links/accents on light: ember-600 or ember-700.
+*/
+@theme {
+  /* Forge — steel / charcoal darks */
+  --color-forge-950: #0f1216;
+  --color-forge-900: #14171c;
+  --color-forge-800: #1b1f26;
+  --color-forge-700: #262c36;
+  --color-forge-600: #3a4250;
+  --color-forge-500: #4d5769;
+
+  /* Ember — molten orange accents */
+  --color-ember-300: #f7a878;
+  --color-ember-400: #f2803a;
+  --color-ember-500: #e2571e;
+  --color-ember-600: #c4471a;
+  --color-ember-700: #a6380f;
+  --color-ember-800: #7f2c0c;
+
+  /* Steel — cool blue-grey secondary */
+  --color-steel-400: #7c93a8;
+  --color-steel-500: #5a7085;
+  --color-steel-600: #445468;
+  --color-steel-700: #35414f;
+
+  /* Stone — warm neutral paper */
+  --color-stone-50: #faf7f2;
+  --color-stone-100: #f2ede4;
+  --color-stone-200: #e4dccf;
+  --color-stone-300: #d6cfc4;
+  --color-stone-400: #a8a096;
+  --color-stone-500: #7c766d;
+  --color-stone-600: #57524b;
+
+  --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Oswald', 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-stone-50);
+    color: var(--color-forge-900);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+  }
+
+  /* Respect users who ask for reduced motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  /* Visible focus ring for keyboard users across the whole app. */
+  :focus-visible {
+    outline: 3px solid var(--color-ember-500);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+/* Utility: the "reforged" heavy display heading treatment. */
+@utility text-forge-heading {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

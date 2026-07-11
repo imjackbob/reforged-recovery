@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Reforged Recovery Inc.">
+  <defs>
+    <radialGradient id="g" cx="80%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#e2571e" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#e2571e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#14171c" />
+  <rect width="1200" height="630" fill="url(#g)" />
+  <!-- anvil mark -->
+  <g transform="translate(90,235) scale(2.6)">
+    <path d="M13 24 h19 c1.1 0 1.7 .8 1.8 1.8 C34 29.5 37.5 32 43 32 h7 v5 h-6 c-6.2 0-9.6-2.2-11.2-4.8 V35 h4.2 l-3.2 6.4 H21.4 l-3.2-6.4 h4.2 v-6 H13 z" fill="#e2571e" />
+    <rect x="20" y="46" width="24" height="4" rx="1.5" fill="#a8a096" />
+  </g>
+  <text x="290" y="300" font-family="Oswald, Arial, sans-serif" font-size="76" font-weight="700" fill="#ffffff" letter-spacing="2">REFORGED RECOVERY INC.</text>
+  <text x="292" y="360" font-family="Inter, Arial, sans-serif" font-size="34" fill="#d6cfc4">What was once broken can be Reforged</text>
+  <text x="292" y="404" font-family="Inter, Arial, sans-serif" font-size="34" fill="#d6cfc4">into something stronger.</text>
+</svg>

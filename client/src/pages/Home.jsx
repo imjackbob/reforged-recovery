@@ -122,9 +122,9 @@ export default function Home() {
           <SectionHeading eyebrow="Who We Are" title="A community built for recovery" />
           <div className="space-y-4 text-lg leading-relaxed text-forge-600 lg:pt-2">
             <p>
-              Reforged Recovery Inc. is a nonprofit organization led by a board of professionals and
-              recovery advocates — people with both the credentials and the lived experience to walk
-              alongside those rebuilding their lives.
+              Reforged Recovery Inc. is a nonprofit organization led by a board of recovery
+              advocates — people with the lived experience to walk alongside those rebuilding their
+              lives.
             </p>
             <p>
               We exist for the season after treatment ends, when lasting change is truly built:

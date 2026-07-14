@@ -89,7 +89,7 @@ export default function About() {
         <SectionHeading
           eyebrow="Leadership"
           title="Our Leadership Team"
-          lead="A board of professionals and recovery advocates guiding the mission of Reforged Recovery."
+          lead="The board and recovery advocates guiding the mission of Reforged Recovery."
         />
         <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TEAM.map((member) => (
@@ -115,9 +115,6 @@ export default function About() {
               )}
               <div>
                 <h3 className="text-lg font-semibold text-forge-900">{member.name}</h3>
-                <p className="text-sm font-semibold uppercase tracking-wide text-ember-700">
-                  {member.credential}
-                </p>
                 <p className="text-forge-600">{member.title}</p>
               </div>
             </li>

@@ -124,7 +124,7 @@ export default function About() {
           ))}
         </ul>
         <p className="mt-6 text-sm text-stone-500">
-          Team headshots coming soon. Placeholders shown above.
+          One additional headshot is on the way and will be added soon.
         </p>
       </Section>
     </>

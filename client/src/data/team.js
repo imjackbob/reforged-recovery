@@ -1,40 +1,33 @@
-// Leadership team. Headshots live in /public/team and are resized to 640×640.
-// Kayla Bennett's photo is pending — her card falls back to an initials avatar
-// (see About.jsx) until a headshot is added here.
+// Leadership team. Headshots live in /public/team, resized to 640×640.
 export const TEAM = [
   {
     name: 'Colton Henderson',
-    title: 'President & CEO',
+    title: 'President',
     photo: '/team/colton-henderson.jpg',
   },
   {
-    name: 'Amanda Higdon',
+    name: 'Hunter Sherril',
     title: 'Vice President',
-    photo: '/team/amanda-higdon.jpg',
+    photo: '/team/hunter-sherril.jpg',
   },
   {
-    name: 'Kayla Bennett',
+    name: 'Chasidy Henderson',
     title: 'Secretary',
-    photo: null,
+    photo: '/team/chasidy-henderson.jpg',
   },
   {
-    name: 'Shannon Kelley',
+    name: 'Jacob Henderson',
     title: 'Treasurer',
-    photo: '/team/shannon-kelley.jpg',
+    photo: '/team/jacob-henderson.jpg',
+  },
+  {
+    name: 'Melanie Henderson',
+    title: 'Director of Marketing & Community Outreach',
+    photo: '/team/melanie-henderson.jpg',
   },
   {
     name: 'Hunter Allen',
-    title: 'Community Outreach Director',
+    title: 'Recovery Advocate',
     photo: '/team/hunter-allen.jpg',
-  },
-  {
-    name: 'Brian Bonifay',
-    title: 'Program Director',
-    photo: '/team/brian-bonifay.jpg',
-  },
-  {
-    name: 'James Crowe',
-    title: 'Advisor',
-    photo: '/team/james-crowe.jpg',
   },
 ]

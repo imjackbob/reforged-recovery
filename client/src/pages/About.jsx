@@ -120,9 +120,6 @@ export default function About() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-sm text-stone-500">
-          One additional headshot is on the way and will be added soon.
-        </p>
       </Section>
     </>
   )

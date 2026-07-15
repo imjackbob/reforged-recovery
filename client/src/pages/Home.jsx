@@ -35,28 +35,42 @@ export default function Home() {
               'radial-gradient(1px 1px at 20% 30%, #f2803a 100%, transparent), radial-gradient(1px 1px at 70% 60%, #f7a878 100%, transparent), radial-gradient(1.5px 1.5px at 40% 80%, #e2571e 100%, transparent)',
           }}
         />
-        <Container className="relative py-20 sm:py-28 lg:py-32">
-          <p className="mb-4 font-display text-sm font-semibold uppercase tracking-[0.22em] text-ember-400">
-            Nonprofit Addiction Recovery
-          </p>
-          <h1 className="text-forge-heading text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-            Reforged
-            <br className="hidden sm:block" /> Recovery Inc.
-          </h1>
-          <p className="mt-6 max-w-2xl text-xl leading-relaxed text-stone-200 sm:text-2xl">
-            What was once broken can be{' '}
-            <span className="font-semibold text-ember-400">Reforged</span> into something stronger.
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Button to="/get-help" size="lg">
-              Get Help <Icon name="arrowRight" className="h-5 w-5" />
-            </Button>
-            <Button to="/about" size="lg" variant="outlineOnDark">
-              Our Story
-            </Button>
-            <Button href={ORG.donateUrl} size="lg" variant="outlineOnDark">
-              <Icon name="heart" className="h-5 w-5" /> Support Our Mission
-            </Button>
+        <Container className="relative py-16 sm:py-20 lg:py-24">
+          <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+            <p className="mb-6 font-display text-sm font-semibold uppercase tracking-[0.22em] text-ember-400">
+              Nonprofit Addiction Recovery
+            </p>
+            {/*
+              The logo lockup already carries the wordmark, so it stands in as the
+              h1 — its alt text supplies the accessible heading. The artwork has a
+              baked-in forge background (no transparency), so it's framed as a
+              panel rather than floated directly on the hero gradient.
+            */}
+            <h1 className="w-full">
+              <img
+                src="/brand/reforged-logo.jpg"
+                alt="Reforged Recovery Inc."
+                width={1000}
+                height={1000}
+                fetchPriority="high"
+                className="mx-auto w-full max-w-xs rounded-2xl shadow-2xl ring-1 ring-white/10 sm:max-w-sm lg:max-w-md"
+              />
+            </h1>
+            <p className="mt-8 text-xl leading-relaxed text-stone-200 sm:text-2xl">
+              What was once broken can be{' '}
+              <span className="font-semibold text-ember-400">Reforged</span> into something stronger.
+            </p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
+              <Button to="/get-help" size="lg">
+                Get Help <Icon name="arrowRight" className="h-5 w-5" />
+              </Button>
+              <Button to="/about" size="lg" variant="outlineOnDark">
+                Our Story
+              </Button>
+              <Button href={ORG.donateUrl} size="lg" variant="outlineOnDark">
+                <Icon name="heart" className="h-5 w-5" /> Support Our Mission
+              </Button>
+            </div>
           </div>
         </Container>
       </section>

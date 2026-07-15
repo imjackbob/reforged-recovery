@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Default SEO. Per-page <Seo> overrides title/description at runtime. -->
@@ -25,7 +25,11 @@
       property="og:description"
       content="A nonprofit addiction recovery organization helping people rebuild their lives, stronger."
     />
-    <meta property="og:image" content="/og-image.svg" />
+    <!-- Absolute URL required: social platforms don't resolve relative og:image. -->
+    <meta
+      property="og:image"
+      content="https://www.reforgedrecovery.org/brand/reforged-logo.jpg"
+    />
     <meta property="og:url" content="https://www.reforgedrecovery.org/" />
     <meta name="twitter:card" content="summary_large_image" />
 
